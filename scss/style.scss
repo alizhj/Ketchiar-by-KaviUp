@@ -1,0 +1,40 @@
+* {
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	color: black;
+	font-size: 10px;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+		h1 {
+			margin: 0;
+		}
+
+		a {
+			color: black;
+		}
+		
+}
+
+	@import "normalize";
+
+	@import "mobile";
+
+@media only screen and (min-width : 480px) {
+	@import "mobile-landscape";
+}
+
+@media only screen and (min-width : 767px) {
+	@import "tablet";
+}
+
+@media only screen and (min-width : 1024px) {
+	@import "tablet-landscape";
+}
+
+@media only screen and (min-width : 1200px) {
+	@import "desktop";
+}
