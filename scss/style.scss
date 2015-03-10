@@ -23,17 +23,17 @@
 
 	@import "mobile";
 
-@media only screen and (min-width : 480px) {
-	@import "mobile-landscape";
-}
+// @media only screen and (min-width : 480px) {
+// 	@import "mobile-landscape";
+// }
 
 @media only screen and (min-width : 767px) {
 	@import "tablet";
 }
 
-@media only screen and (min-width : 1024px) {
-	@import "tablet-landscape";
-}
+// @media only screen and (min-width : 1024px) {
+// 	@import "tablet-landscape";
+// }
 
 @media only screen and (min-width : 1200px) {
 	@import "desktop";
