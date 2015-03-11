@@ -367,25 +367,24 @@ td,
 th {
   padding: 0; }
 
-@media only screen and (min-width: 1200px) {
-  .section {
-    height: 100vh; }
-    .section .content {
-      font-size: 3em;
-      margin: 0;
-      padding-top: 5%;
-      text-align: center; }
+.section {
+  height: 100vh; }
+  .section .content {
+    font-size: 3em;
+    margin: 0;
+    padding-top: 5%;
+    text-align: center; }
 
-  .one {
-    background-color: #75B54F; }
+.one {
+  background-color: #75B54F; }
 
-  .two {
-    background-color: #32E0FF; }
+.two {
+  background-color: #32E0FF; }
 
-  .three {
-    background-color: #CC7082; }
+.three {
+  background-color: #CC7082; }
 
-  .four {
-    background-color: #8EC1FF; } }
+.four {
+  background-color: #8EC1FF; }
 
 /*# sourceMappingURL=style.css.map */
