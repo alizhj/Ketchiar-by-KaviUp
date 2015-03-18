@@ -408,6 +408,9 @@ th {
     background-repeat: no-repeat;
     background-size: 100px auto; }
 
+#player-wrapper {
+  background-color: black; }
+
 .four {
   background-color: #8EC1FF; }
 
