@@ -40,6 +40,13 @@
   		.headbox {
   			width: 100%;
   			height: 30%;
+
+  				p {
+  					position: relative;
+  					font-size: 2em;
+  					text-align: left;
+  					visibility: hidden;
+  				}
   		}
 
   		#lisa-head {

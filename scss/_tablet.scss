@@ -2,8 +2,8 @@
 
 		#head-slogan {
 			font-size: 5em;
-			padding-top: 30px;
-			padding-bottom: 30px;
+			padding-top: 35px;
+			padding-bottom: 35px;
 		}
 }
 
@@ -12,5 +12,12 @@
   		.headbox {
   			width: 25%;
   			height: 100%;
+
+  				p {
+  					top: 10%;
+  					font-size: 2em;
+  					text-align: center;
+  					visibility: visible;
+  				}
   		}
 }
