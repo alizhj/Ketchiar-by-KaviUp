@@ -15,9 +15,11 @@
 }
 //Robins del homies
 .three {
+
 	background-color: #CC7082;
 
 		#head-slogan {
+			position: relative;
 			font-size: 2.4em;
 			text-align: center;
 			padding-top: 15px;
@@ -25,8 +27,8 @@
 		}
 }
 
-#character-wrapper{
-	height: 90%;
+#character-wrapper {
+	width: 100%;
 	display: -webkit-box;
   	display: -moz-box;
   	display: -ms-flexbox;
@@ -35,44 +37,43 @@
   
   	-webkit-flex-flow: row wrap;
   	justify-content: space-around;
-  	align-content: space-around;
 
   		.headbox {
-  			width: 100%;
+  			width: 30%;
   			height: 30%;
-
-  				p {
-  					position: relative;
-  					font-size: 2em;
-  					text-align: left;
-  					visibility: hidden;
-  				}
   		}
 
   		#lisa-head {
-  			background-image: url("../Images/lisa-head.png");
+  			background-image: url(../Images/lisa-head.png);
   			background-repeat: no-repeat;
-  			background-position: center;
   			background-size: contain;
   		}
 
   		#tobbe-head {
-  			background-image: url("../Images/tobbe-head.png");
+  			background-image: url(../Images/tobbe-head.png);
   			background-repeat: no-repeat;
-  			background-position: center;
   			background-size: contain;
   		}
 
   		#robin-head {
-  			background-image: url("../Images/robin-head.png");
+  			background-image: url(../Images/robin-head.png);
   			background-repeat: no-repeat;
-  			background-position: center;
   			background-size: contain;
   		}
 }
 
 #player-wrapper {
-	background-color: black;
+	position: relative;
+	background-repeat: no-repeat;
+  	background-size: contain;
+	width: 400px;
+	height: 90%;
+	top: 10%;
+	margin: 0 auto;
+}
+
+.hidden {
+	display: none;
 }
 
 //Robins del homies

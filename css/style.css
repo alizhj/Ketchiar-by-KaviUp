@@ -384,47 +384,48 @@ th {
 .three {
   background-color: #CC7082; }
   .three #head-slogan {
+    position: relative;
     font-size: 2.4em;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px; }
 
 #character-wrapper {
-  height: 90%;
+  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around; }
+  justify-content: space-around; }
   #character-wrapper .headbox {
-    width: 100%;
+    width: 30%;
     height: 30%; }
-    #character-wrapper .headbox p {
-      position: relative;
-      font-size: 2em;
-      text-align: left;
-      visibility: hidden; }
   #character-wrapper #lisa-head {
-    background-image: url("../Images/lisa-head.png");
+    background-image: url(../Images/lisa-head.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: contain; }
   #character-wrapper #tobbe-head {
-    background-image: url("../Images/tobbe-head.png");
+    background-image: url(../Images/tobbe-head.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: contain; }
   #character-wrapper #robin-head {
-    background-image: url("../Images/robin-head.png");
+    background-image: url(../Images/robin-head.png);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: contain; }
 
 #player-wrapper {
-  background-color: black; }
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 90%;
+  top: 10%;
+  margin: 0 auto; }
+
+.hidden {
+  display: none; }
 
 .four {
   background-color: #8EC1FF; }
@@ -435,16 +436,9 @@ th {
     padding-top: 35px;
     padding-bottom: 35px; }
 
-  #character-wrapper {
-    height: 80%; }
-    #character-wrapper .headbox {
-      width: 25%;
-      height: 100%; }
-      #character-wrapper .headbox p {
-        top: 10%;
-        font-size: 2em;
-        text-align: center;
-        visibility: visible; } }
+  #character-wrapper .headbox {
+    width: 25%;
+    height: 50%; } }
 @media only screen and (min-width: 1200px) {
   .three #head-slogan {
     font-size: 7em;
@@ -452,14 +446,9 @@ th {
     padding-bottom: 40px; }
 
   #character-wrapper {
-    height: 80%; }
+    height: 50%; }
     #character-wrapper .headbox {
       width: 17%;
-      height: 100%; }
-      #character-wrapper .headbox p {
-        top: 10%;
-        font-size: 2em;
-        text-align: center;
-        visibility: visible; } }
+      height: 80%; } }
 
 /*# sourceMappingURL=style.css.map */
