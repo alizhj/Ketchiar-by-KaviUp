@@ -389,6 +389,15 @@ th {
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px; }
+  .three #start-button {
+    position: relative;
+    top: 30%;
+    width: 60%;
+    margin: auto;
+    background-color: green;
+    padding: 5%;
+    font-size: 5em;
+    text-align: center; }
 
 #character-wrapper {
   width: 100%;

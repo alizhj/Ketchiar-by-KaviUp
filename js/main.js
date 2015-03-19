@@ -10,6 +10,14 @@ $(document).ready(function() {
 		}
     });
 
+    $("#character-wrapper").hide();
+
+    $("#start-button").click(function() {
+    	$(this).hide();
+    	$("#character-wrapper").show();
+    	$("#head-slogan").html("Pick your player");
+    });
+
     $(".headbox").click(function() {
 
     	var playerPicture = ["url(Images/lisa.png)", "url(Images/tobbe.png)", "url(Images/robin.png)"];
