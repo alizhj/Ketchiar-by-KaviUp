@@ -11,12 +11,40 @@ $(document).ready(function() {
     });
 
     $("#character-wrapper").hide();
+    $("#final-answer").hide();
 
-    $("#start-button").click(function() {
-    	$(this).hide();
+
+    $("#yes").click(function() {	
+    	optionYes()
+    });
+
+    $("#no").click(function() {
+    	optionNo()
+    });
+
+    function optionYes() {
+    	$("#button-wrapper").hide();
     	$("#character-wrapper").show();
     	$("#head-slogan").html("Pick your player");
-    });
+	}
+
+	function optionNo() {
+		$("#head-slogan").html("Are you sure?");
+		$("#no").click(function() {	
+    		optionYes()
+    	});
+
+    	$("#yes").click(function() {	
+    		$("#head-slogan").html("But its fun!");
+    		$("#character-wrapper").hide();
+    		$("#button-wrapper").hide();
+    		$("#final-answer").show();
+    		$("#final-answer").click(function() {
+    			optionYes()
+    			$("#final-answer").hide();
+    		});
+    	});
+	}
 
     $(".headbox").click(function() {
 
