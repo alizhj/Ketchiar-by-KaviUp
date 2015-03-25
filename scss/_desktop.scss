@@ -2,15 +2,23 @@
 
 		#head-slogan {
 			font-size: 7em;
-			padding-top: 40px;
-			padding-bottom: 40px;
+			padding-top: 30px;
+			padding-bottom: 30px;
 		}
 }
 
 #character-wrapper{
 	height: 50%;
   		.headbox {
-  			width: 17%;
+  			width: 12%;
   			height: 80%;
   		}
+}
+
+#player-wrapper {
+  height: 90%;
+}
+
+#bottle {
+  left: 59%;
 }

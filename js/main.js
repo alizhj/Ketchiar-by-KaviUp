@@ -10,8 +10,10 @@ $(document).ready(function() {
 		}
     });
 	//Dölj vid uppstart
+	$("#player-wrapper").hide();
     $("#character-wrapper").hide();
     $("#final-answer").hide();
+    $("#bottle").hide();
 
     //Om ja, visa alternativ och dölj Yes/No
     $("#yes").click(function() {	
@@ -82,7 +84,29 @@ $(document).ready(function() {
     	function showPlayer() {
     		$("#head-slogan").fadeIn().html("Press screen to start the game");
     		$("#player-wrapper").fadeIn().css("background-image", playerPicture[clickedPlayer]);
+    		$(".three").click(function(){
+    			$("#head-slogan").addClass("hidden");
+				$("#bottle").fadeIn(1000, moveBottle);
+			});
+    	}
+
+    	function moveBottle() {
+
+    		var bottleSpeed = 500;
+
+    		$("#bottle").animate({
+    			top: "+=100%"
+    		}, bottleSpeed, function() {
+    			$("#bottle").animate({
+    				top: "-=100%"
+    			}, 0, function() {
+	    			moveBottle();
+	    		});
+    		});
+
+    		$(".three").click(function() {
+    			$("#bottle").stop();
+    		});
     	}
     });
-
 });

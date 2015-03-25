@@ -368,7 +368,8 @@ th {
   padding: 0; }
 
 .section {
-  height: 100vh; }
+  height: 100vh;
+  position: relative; }
   .section .content {
     font-size: 3em;
     margin: 0;
@@ -419,6 +420,15 @@ th {
     text-align: center;
     cursor: pointer;
     background-color: green; }
+  .three #bottle {
+    z-index: 1000;
+    position: absolute;
+    top: 0%;
+    width: 45px;
+    height: 100px;
+    background-image: url(../Images/kaviupflaska.png);
+    background-repeat: no-repeat;
+    background-size: contain; }
 
 #character-wrapper {
   width: 100%;
@@ -449,12 +459,12 @@ th {
   position: relative;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 400px;
+  width: 350px;
   height: 90%;
   margin: 0 auto; }
 
 .hidden {
-  display: none; }
+  visibility: hidden; }
 
 .four {
   background-color: #8EC1FF; }
@@ -471,13 +481,19 @@ th {
 @media only screen and (min-width: 1200px) {
   .three #head-slogan {
     font-size: 7em;
-    padding-top: 40px;
-    padding-bottom: 40px; }
+    padding-top: 30px;
+    padding-bottom: 30px; }
 
   #character-wrapper {
     height: 50%; }
     #character-wrapper .headbox {
-      width: 17%;
-      height: 80%; } }
+      width: 12%;
+      height: 80%; }
+
+  #player-wrapper {
+    height: 90%; }
+
+  #bottle {
+    left: 59%; } }
 
 /*# sourceMappingURL=style.css.map */
