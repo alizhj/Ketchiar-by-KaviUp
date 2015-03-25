@@ -80,6 +80,7 @@ $(document).ready(function() {
     	$(this).delay(500).fadeOut(500, showPlayer);
     	//Fade in på bilden och väljer en background image (med rätt värde från arrayen)
     	function showPlayer() {
+    		$("#head-slogan").fadeIn().html("Press screen to start the game");
     		$("#player-wrapper").fadeIn().css("background-image", playerPicture[clickedPlayer]);
     	}
     });
