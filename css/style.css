@@ -369,7 +369,8 @@ th {
 
 .section {
   height: 100vh;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .section .content {
     font-size: 3em;
     margin: 0;

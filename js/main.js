@@ -50,6 +50,7 @@ $(document).ready(function() {
     		});
     	});
 	}
+
 	//Klickar på något huvud
     $(".headbox").click(function() {
     	//Två variabler skapas, ena för länk till bilderna, andra för vilken av "headbox" som valdes
@@ -80,33 +81,36 @@ $(document).ready(function() {
     	$("#head-slogan").delay(500).fadeOut(500);
     	$(this).siblings().hide();
     	$(this).delay(500).fadeOut(500, showPlayer);
+
     	//Fade in på bilden och väljer en background image (med rätt värde från arrayen)
+
     	function showPlayer() {
-    		$("#head-slogan").fadeIn().html("Press screen to start the game");
-    		$("#player-wrapper").fadeIn().css("background-image", playerPicture[clickedPlayer]);
-    		$(".three").click(function(){
-    			$("#head-slogan").addClass("hidden");
+			$("#head-slogan").fadeIn().html("Press screen to start the game");
+			$("#player-wrapper").fadeIn().css("background-image", playerPicture[clickedPlayer]);
+			$(".three").click(function(){
+				$("#head-slogan").addClass("hidden");
 				$("#bottle").fadeIn(1000, moveBottle);
-			});
-    	}
-
-    	function moveBottle() {
-
-    		var bottleSpeed = 500;
-
-    		$("#bottle").animate({
-    			top: "+=100%"
-    		}, bottleSpeed, function() {
-    			$("#bottle").animate({
-    				top: "-=100%"
-    			}, 0, function() {
-	    			moveBottle();
-	    		});
-    		});
-
-    		$(".three").click(function() {
-    			$("#bottle").stop();
-    		});
-    	}
+		});
+	}
     });
+
+	//Fade in på bilden och väljer en background image (med rätt värde från arrayen)
+
+	function moveBottle() {
+
+		var bottleSpeed = 500;
+
+		$("#bottle").animate({
+			top: "100%"
+		}, bottleSpeed, function() {
+			$("#bottle").css("top", "0%");
+			moveBottle();
+		});
+
+		$(".three").click(function(){
+			$("#bottle").stop();
+			var bottlePosition = $("#bottle").attr("style");
+			console.log(bottlePosition);
+		});
+   	}
 });
