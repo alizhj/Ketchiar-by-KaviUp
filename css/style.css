@@ -591,39 +591,6 @@ th {
   visibility: hidden;
 }
 
-/* ********** SEKTION 4 ************* */
-/* line 135, ../scss/_mobile.scss */
-.four {
-  background-color: #8EC1FF;
-}
-/* line 139, ../scss/_mobile.scss */
-.four li {
-  display: inline-block;
-  float: left;
-  max-width: 200px;
-  height: 150px;
-}
-/* line 148, ../scss/_mobile.scss */
-.four .right, .four .left {
-  float: left;
-  padding: 5% 5% 5% 5%;
-}
-/* line 153, ../scss/_mobile.scss */
-.four .right {
-  max-width: 50%;
-}
-/* line 156, ../scss/_mobile.scss */
-.four .right img {
-  width: 80%;
-  height: auto;
-  text-align: center;
-}
-/* line 163, ../scss/_mobile.scss */
-.four .left {
-  max-width: 40%;
-  padding: 5% 5% 5% 5%;
-}
-
 @media only screen and (min-width: 767px) {
   /* line 3, ../scss/_tablet.scss */
   .three #head-slogan {

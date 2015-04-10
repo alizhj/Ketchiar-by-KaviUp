@@ -1,0 +1,32 @@
+/* ********** SEKTION 4 ************* */
+
+.four {
+	background-color: #8EC1FF;
+
+	li {
+		display: inline-block;
+		float:left;
+		max-width:200px;
+		height:150px;
+	}
+
+	.right, .left {
+		float:left;
+		padding: 5% 5% 5% 5%;
+	}
+
+	.right {
+		max-width:50%;
+		
+		img {
+			width:80%;
+			height: auto;
+			text-align:center;
+		}
+	}
+
+	.left {
+		max-width:40%;
+		padding: 5% 5% 5% 5%;
+	}
+}
