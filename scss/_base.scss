@@ -3,6 +3,10 @@
 .four {
 	background-color: #8EC1FF;
 
+	h1 {
+		font-size:2em;
+	}
+
 	li {
 		display: inline-block;
 		float:left;
@@ -30,5 +34,3 @@
 		padding: 5% 5% 5% 5%;
 	}
 }
-
-.four {}
