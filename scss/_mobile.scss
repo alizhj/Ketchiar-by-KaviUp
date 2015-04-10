@@ -22,7 +22,7 @@
 
 		#head-slogan {
 			position: relative;
-			font-size: 2.4em;
+			/*font-size: 1em;*/
 			text-align: center;
 			padding-top: 15px;
 			padding-bottom: 15px;
@@ -40,7 +40,7 @@
 				.button {
 					position: absolute;
 					width: 50%;
-					font-size: 2em;
+					font-size: 1em;
 					cursor: pointer;
 					padding-top: 50px;
 					padding-bottom:50px;
@@ -63,7 +63,7 @@
 			width: 400px;
 			padding: 50px 0px 50px 0px;	
 			margin: auto;
-			font-size: 5em;
+			font-size: 1em;
 			text-align: center;
 			cursor: pointer;
 			background-color: green;
@@ -130,6 +130,38 @@
 }
 
 //Robins del homies
+
+/* ********** SEKTION 4 ************* */
 .four {
 	background-color: #8EC1FF;
+
+
+li {
+	display: inline-block;
+	float:left;
+	max-width:200px;
+	height:150px;
+}
+
+
+
+.right, .left {
+	float:left;
+	padding: 5% 5% 5% 5%;
+}
+
+.right {
+	max-width:50%;
+	
+	img {
+		width:80%;
+		height: auto;
+		text-align:center;
+	}
+}
+
+.left {
+	max-width:40%;
+	padding: 5% 5% 5% 5%;
+}
 }
